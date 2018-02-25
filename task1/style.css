@@ -13,6 +13,7 @@ body {
   border: 1px solid lightblue;
   border-radius: 8px;
   padding: 16px;
+    transform: rotate3d(x,y,z,angle);
 }
 
 ul {
@@ -25,18 +26,42 @@ ul {
 
 ul > li {
   list-style-type: none;
-  padding: 20px;
+padding:0px;
   background-color: lightpink;
   width: calc(100%/6);
+    
 }
 
 ul > li img {
   margin: 0 auto;
-  display: block;
+    width: 100%;
+    
+   
+ 
+
+    
 }
 
 .clearfix {
   clear: both;
 }
 
-/* Вашият CSS от тук надолу */
+}
+
+@media only screen and (max-width: 1000px) {
+    body {
+        background-color: lightblue;
+        background-image: 6;
+    }
+    
+    @media only screen and (max-width: 600px) {
+   subtask1 {
+        background-color: lightblue;
+        background-image: 3;
+    }
+        
+        @media only screen and (max-width: 400px) {
+     subtask1 {
+        background-color: lightblue;
+        background-image: 2;
+    }
