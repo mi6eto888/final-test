@@ -1,67 +1,96 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: sans-serif;
-  line-height: 1.6em;
-  padding-bottom: 400px;
+    font-family: sans-serif;
+    line-height: 1.6em;
+    padding-bottom: 400px;
 }
 
 .subtask {
-  margin: 20px 0;
-  border: 1px solid lightblue;
-  border-radius: 8px;
-  padding: 16px;
-    transform: rotate3d(x,y,z,angle);
+    margin: 20px 0;
+    border: 1px solid lightblue;
+    border-radius: 8px;
+    padding: 16px;
+
 }
 
+#subtask5 li:hover:after {
+    content: "IMAGINE THAT";
+    position: absolute;
+    background-color: darkblue;
+}
+
+
 ul {
-  padding: 0;
-  margin: 0;
-  font-family: sans-serif;
-  color: white;
-  display: flex;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    color: white;
+    display: flex;
 }
 
 ul > li {
-  list-style-type: none;
-padding:0px;
-  background-color: lightpink;
-  width: calc(100%/6);
-    
+    list-style-type: none;
+    padding: 0px;
+    background-color: lightpink;
+    width: calc(100%/6);
+
 }
 
 ul > li img {
-  margin: 0 auto;
+    margin: 0 auto;
     width: 100%;
-    
-   
- 
 
-    
+}
+
+li:nth-child(even) {
+    background-color: lightblue;
+}
+
 }
 
 .clearfix {
-  clear: both;
+    clear: both;
 }
 
-}
 
-@media only screen and (max-width: 1000px) {
+
+@media screen and (max-width: 1000px) {
     body {
         background-color: lightblue;
-        background-image: 6;
+        margin: 0;
+        padding: 10px;
+        display: inline-grid;
     }
-    
-    @media only screen and (max-width: 600px) {
-   subtask1 {
-        background-color: lightblue;
-        background-image: 3;
+
+
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: hotpink;
+        padding: 25px 10px;
+        display: inline-grid;
+
     }
-        
-        @media only screen and (max-width: 400px) {
-     subtask1 {
-        background-color: lightblue;
-        background-image: 2;
+
+    @media screen and (max-width: 400px) {
+        body {
+            background-color: violet;
+
+            display: inline-grid;
+
+
+        }
+    }
+
+
+    .li {
+        transition-delay: 2s;
+    }
+
+    .li:hover {
+        transform: translateY(360deg);
     }
